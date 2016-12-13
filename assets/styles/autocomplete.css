@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box; }
+
+div.ui-autocomp {
+  width: 100%;
+  font-family: "Open Sans", sans-serif; }
+  div.ui-autocomp input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #aaa; }
+  div.ui-autocomp ul.ui-autocomp-suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    position: relative;
+    z-index: 9999; }
+    div.ui-autocomp ul.ui-autocomp-suggestions li {
+      padding: 5px;
+      text-transform: capitalize;
+      border-bottom: 1px solid #aaa;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa; }
+      div.ui-autocomp ul.ui-autocomp-suggestions li .highlight {
+        font-weight: 600;
+        text-transform: none; }
+      div.ui-autocomp ul.ui-autocomp-suggestions li:focus {
+        background-color: aliceblue;
+        outline: none; }
+      div.ui-autocomp ul.ui-autocomp-suggestions li:hover {
+        background-color: aliceblue !important; }
+    div.ui-autocomp ul.ui-autocomp-suggestions:hover li {
+      background-color: transparent; }
+
+/*# sourceMappingURL=autocomplete.css.map */

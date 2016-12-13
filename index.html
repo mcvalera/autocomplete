@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/assets/styles/autocomplete.css" />
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var config = {
+          inputNode: document.querySelector('.blah'),
+          dataSourceUrl: '',
+          param: 'q',
+          maxSuggestions: 5,
+          minInput: 5
+        }
+        var compl = new Autocomplete(config);
+
+        var config2 = {
+          inputNode: document.querySelector('.poops'),
+          dataSourceUrl: '',
+          param: 'q',
+          maxSuggestions: 5
+        }
+        var second = new Autocomplete(config2)
+        // compl.init();
+      });
+    </script>
+    <script type="text/javascript" src="/assets/js/autocomplete.js"></script>
+
+    <style type="text/css">
+      .merp {
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+        border: 1px solid aquamarine;
+      }
+      p {
+        background-color: pink;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="merp">
+      <input type="text" name="search" class="blah">
+    </div>
+    <p>HELLO!</p>
+     <input type="text" name="search" class="poops">
+
+
+  </body>
+</html>
